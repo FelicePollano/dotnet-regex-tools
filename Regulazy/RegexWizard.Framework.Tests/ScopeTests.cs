@@ -423,7 +423,7 @@ namespace RegexWizard.Framework.Tests
 
 
         [Test]
-        [ExpectedException(typeof(InvalidOperationException), "You can't remove an implicit Scope, you can only remove an Explicit one")]
+        [ExpectedException(typeof(InvalidOperationException), ExpectedMessage="You can't remove an implicit Scope, you can only remove an Explicit one")]
         public void RemoveInnerScope_TryRemoveImplicitScope_ThrowsException()
         {
             scope = new Scope("abc");
@@ -433,7 +433,7 @@ namespace RegexWizard.Framework.Tests
         }
 
         [Test]
-        [ExpectedException(typeof(InvalidOperationException), "You can't remove an implicit Scope, you can only remove an Explicit one")]
+        [ExpectedException(typeof(InvalidOperationException), ExpectedMessage = "You can't remove an implicit Scope, you can only remove an Explicit one")]
         public void RemoveInnerScope_TryRemoveImplicitScopeRight_ThrowsException()
         {
             scope = new Scope("abc");
@@ -611,7 +611,7 @@ namespace RegexWizard.Framework.Tests
         }
 
         [Test]
-        [ExpectedException(typeof(InvalidOperationException), "You can't set an inner scope with the same length of the parent scope")]
+        [ExpectedException(typeof(InvalidOperationException), ExpectedMessage="You can't set an inner scope with the same length of the parent scope")]
         public void SetInnerScope_SameScopeAsParent_ThrowsExcpetion()
         {
             scope = new Scope("abc");
@@ -698,7 +698,7 @@ namespace RegexWizard.Framework.Tests
         }
 
         [Test]
-        [ExpectedException(typeof(InvalidOperationException), "Invalid start position requested")]
+        [ExpectedException(typeof(InvalidOperationException), ExpectedMessage="Invalid start position requested")]
         public void GetInnerScope_NegativeStartPos_ThrowsException()
         {
             scope = new Scope("defge");//flat
@@ -706,7 +706,7 @@ namespace RegexWizard.Framework.Tests
         }
 
         [Test]
-        [ExpectedException(typeof(InvalidOperationException), "Invalid start position requested")]
+        [ExpectedException(typeof(InvalidOperationException), ExpectedMessage = "Invalid start position requested")]
         public void GetInnerScope_overflowingLength_THrowsException()
         {
             scope = new Scope("defge");//flat
@@ -714,7 +714,7 @@ namespace RegexWizard.Framework.Tests
         }
 
         [Test]
-        [ExpectedException(typeof(InvalidOperationException), "Invalid start position requested")]
+        [ExpectedException(typeof(InvalidOperationException), ExpectedMessage = "Invalid start position requested")]
         public void GetInnerScope_overflowingLengthFromMiddle_THrowsException()
         {
             scope = new Scope("defge");//flat

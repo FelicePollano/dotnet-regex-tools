@@ -1,23 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexWizard.Framework", "RegexWizard.Framework\RegexWizard.Framework.csproj", "{01A02D7C-0AE6-4C98-B6A5-83810C7FA5AC}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexWizard.Framework.Tests", "RegexWizard.Framework.Tests\RegexWizard.Framework.Tests.csproj", "{A39657CC-06AB-482F-A548-802D5B7038FB}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
-EndProject
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4532F999-5621-496D-8ACE-DEDA10CBE2D5}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 	ProjectSection(SolutionItems) = preProject
 		Readme.txt = Readme.txt
 		TODO.txt = TODO.txt
@@ -26,42 +10,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		{B4F97281-0DBD-4835-9ED8-7DFB966E87FF} = {B4F97281-0DBD-4835-9ED8-7DFB966E87FF}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexWizard.Framework", "RegexWizard.Framework\RegexWizard.Framework.csproj", "{01A02D7C-0AE6-4C98-B6A5-83810C7FA5AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexWizard.Framework.Tests", "RegexWizard.Framework.Tests\RegexWizard.Framework.Tests.csproj", "{A39657CC-06AB-482F-A548-802D5B7038FB}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulazy.UI", "Regulazy.UI\Regulazy.UI.csproj", "{D047543A-EEF0-4D3E-8BE1-FD0DF6725F47}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulazy.UISupport", "Regulazy.UISupport\Regulazy.UISupport.csproj", "{610549A4-C6A5-4D52-981C-FDC6FCD1DEEA}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulazy.UISupport.Tests", "Regulazy.UISupport.Tests\Regulazy.UISupport.Tests.csproj", "{90925037-65A8-4781-B2B4-5ADD9ADCD161}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexWizard.TemplateEngine", "RegexWizard.TemplateEngine\RegexWizard.TemplateEngine.csproj", "{8ECF3FA8-C211-4817-972A-F7A9F8C7CE3A}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexWizard.TemplateEngine.Tests", "RegexWizard.TemplateEngine.Tests\RegexWizard.TemplateEngine.Tests.csproj", "{84B969DE-1649-4977-8C92-5973E3FC09ED}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = RegexWizard.Framework.vsmdi
-	EndGlobalSection
-	GlobalSection(TextTemplating) = postSolution
-		TextTemplating = 1
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,5 +64,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TextTemplating) = postSolution
+		TextTemplating = 1
 	EndGlobalSection
 EndGlobal

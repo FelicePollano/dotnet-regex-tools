@@ -663,7 +663,7 @@ namespace RegexWizard.Framework.Tests
 
         #region LearnFile
         [Test]
-        [ExpectedException(typeof(InvalidOperationException), "A suggestion with the regex 'a' already exists")]
+        [ExpectedException(typeof(InvalidOperationException), ExpectedMessage="A suggestion with the regex 'a' already exists")]
         public void Learn_SuggestionMatchAlreadyExists_ThrowsException()
         {
             Suggestion s1 = new Suggestion(@"a", "explicit match a");
